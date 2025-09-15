@@ -12,16 +12,17 @@
     <label for="nama_lengkap">Nama Lengkap:</label>
     <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan nama lengkap" required>
     <br><br>
+
     <!-- INPUT_Devi: Jenis Kelamin -->
-     <label>Jenis Kelamin:</label><br>
+    <label>Jenis Kelamin:</label><br>
+    <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+    <label for="laki">Laki-laki</label><br>
 
-  <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
-  <label for="laki">Laki-laki</label><br>
+    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+    <label for="perempuan">Perempuan</label><br><br>
 
-  <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
-  <label for="perempuan">Perempuan</label><br>
     <!-- INPUT_Intan: Tempat & Tanggal Lahir -->
-     <label for="tempat">Tempat Lahir:</label><br>
+    <label for="tempat">Tempat Lahir:</label><br>
     <input type="text" id="tempat" name="tempat" placeholder="Contoh: Jakarta" required><br><br>
 
     <label for="tanggal">Tanggal Lahir:</label><br>
@@ -29,14 +30,24 @@
 
     <!-- INPUT_Laras: Alamat Lengkap -->
     <!-- INPUT_Mugni: Nama Orang Tua/Wali -->
-     <label for="nama_ortu">Nama Orang Tua/Wali:</label>
-<input type="text" id="nama_ortu" name="nama_ortu" placeholder="Masukkan nama orang tua/wali" required>
-<br><br>
+    <label for="nama_ortu">Nama Orang Tua/Wali:</label>
+    <input type="text" id="nama_ortu" name="nama_ortu" placeholder="Masukkan nama orang tua/wali" required>
+    <br><br>
+
     <!-- INPUT_Cahayani: Asal Sekolah -->
     <label>Nama Sekolah Asal:</label><br>
-            <input type="text" name="nama_sekolah_asal"><br><br>
+    <input type="text" name="nama_sekolah_asal"><br><br>
+
     <!-- INPUT_Nuriyanti: Nomor Telepon -->
-     <button type="submit">Simpan</button>
+    <label for="phone">Nomor Telepon:</label><br>
+    <input type="tel" id="phone" name="phone" 
+           placeholder="081234567890"
+           pattern="[0-9]{10,13}" 
+           required>
+    <br><br>
+
+    <!-- Tombol Submit -->
+    <button type="submit">Simpan</button>
   </form>
 </body>
 </html>
